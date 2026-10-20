@@ -1,0 +1,23 @@
+# Khóa riêng tuyệt đối không được commit (NFR-04)
+keys/**/*.key
+keys/**/*private*
+*.pem
+!keys/**/*public*.pem
+
+# Cơ sở dữ liệu sinh ra khi chạy
+data/sigtool.db
+data/*.db-journal
+
+# Kết quả chạy, trừ tệp mẫu
+results/*.csv
+results/*.jsonl
+!results/README.md
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
