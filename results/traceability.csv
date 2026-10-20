@@ -1,0 +1,20 @@
+ma_minh_chung,yeu_cau,phep_thu,ket_qua_mong_doi,ket_qua_thuc_te,tep_lien_quan,thanh_vien
+TC-01,FR-06,Ky roi xac minh ba thuat toan,OK,OK,tests/test_positive.py,Uyen
+TC-02,FR-07,Ky manifest bao ve ca bo artifact,OK,OK,tests/test_positive.py,Uyen
+TC-03,FR-12,Sua mot byte noi dung,CONTENT_MODIFIED,CONTENT_MODIFIED,tests/test_tamper.py,Phieu
+TC-04,FR-12,Doi ten tep giu nguyen noi dung,METADATA_MODIFIED,METADATA_MODIFIED,tests/test_tamper.py,Phieu
+TC-05,FR-12,Sua manifest da ky,SIG_INVALID,SIG_INVALID,tests/test_tamper.py,Phieu
+TC-06,FR-11,Thay chu ky bang rac,SIG_INVALID,SIG_INVALID,tests/test_tamper.py,Phieu
+TC-07,FR-10,Khoa khong trong trust list,KEY_UNKNOWN,KEY_UNKNOWN,tests/test_tamper.py,Phieu
+TC-08,FR-13,Nhat ky chi ghi them,Khong sua dong cu,Khong sua dong cu,tests/test_tamper.py,Phieu
+TC-09,FR-16,Trong giai doan chong lan,OK,OK,tests/test_rotation.py,Long
+TC-10,FR-16,Sau giai doan chong lan,KEY_EXPIRED,KEY_EXPIRED,tests/test_rotation.py,Long
+TC-11,FR-17,Chu ky sau moc thu hoi,KEY_REVOKED,KEY_REVOKED,tests/test_rotation.py,Long
+TC-12,FR-18,Dem artifact bi anh huong,Dung so luong,Dung so luong,tests/test_rotation.py,Long
+TC-13,FR-23,Luong day du qua dong lenh,Ma thoat 0,Ma thoat 0,tests/test_cli.py,Uyen
+TC-14,FR-23,Sua artifact thi verify tra ma thoat 1,Ma thoat 1,Ma thoat 1,tests/test_cli.py,Uyen
+TC-15,FR-20,Bench sinh du so dong va du cot,18 dong du lieu,18 dong du lieu,tests/test_cli.py,Uyen
+KQ-01,FR-20,Do hieu nang 1 MB,>=100 lan lap,600 dong,results/bench.csv,Uyen
+KQ-02,FR-20,Do hieu nang 1 KB,>=100 lan lap,600 dong,results/bench_1kb.csv,Uyen
+KQ-03,NFR-01,Xac minh 1 MB duoi 50 ms,<50 ms,2.73 ms,results/bench.csv,Uyen
+KQ-04,NFR-09,Do phu kiem thu,>=70%,94%,pytest --cov,Uyen

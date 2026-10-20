@@ -8,10 +8,9 @@ keys/**/*private*
 data/sigtool.db
 data/*.db-journal
 
-# Kết quả chạy, trừ tệp mẫu
-results/*.csv
-results/*.jsonl
-!results/README.md
+# Kết quả chạy ĐƯỢC commit: đề bài yêu cầu nộp kèm CSV, log và biểu đồ
+# làm minh chứng, nên chúng là sản phẩm chứ không phải tệp rác.
+
 
 __pycache__/
 *.py[cod]

@@ -1,13 +1,15 @@
 # Thư mục kết quả
 
-Các tệp trong đây do công cụ sinh ra, không commit (xem `.gitignore`).
-Khi nộp bài thì nén cả thư mục này kèm báo cáo.
+Các tệp trong đây là minh chứng bắt buộc của đề bài nên ĐƯỢC commit.
+Chạy lại công cụ sẽ ghi đè chúng bằng số liệu của máy bạn.
 
 | Tệp | Nội dung | Yêu cầu liên quan |
 | --- | --- | --- |
 | `bench.csv` | Từng lần đo thời gian ký và xác minh | FR-20, FR-21, NFR-02 |
 | `verify_log.jsonl` | Nhật ký xác minh, chỉ ghi thêm | FR-13, NFR-05 |
 | `traceability.csv` | Bảng truy vết minh chứng | FR-22, NFR-10 |
+| `bench_1kb.csv` | Đo với dữ liệu 1 KB để tách chi phí băm | FR-20 |
+| `bieu_do_hieu_nang.png` | Biểu đồ so sánh ba thuật toán | Giai đoạn Đánh giá |
 
 Cột của `bench.csv`:
 
